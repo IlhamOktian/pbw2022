@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perulangan do/while</title>
+</head>
+<body>
+    <script>
+        var ulang = prompt("apakah anda ingin mengualang ??");
+        var counter= 0;
+        
+        do
+        {
+            counter ++;
+            ulang = confirm("apakah ingin mengulang kembali ?? ");
+        }
+        while(ulang);
+        
+        document.write("<p> anda sudah mengulangi sebanyak " + counter +"</p> ");
+    </script>
+</body>
+</html>
