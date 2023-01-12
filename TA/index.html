@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVilm</title>
+    <link rel="stylesheet" href="inicss.css">
+    <link rel="icon" type="image/png" href="nyancat.png">
+    <script type="text/javascript">
+        var name = window.prompt("Mohon masukan nama anda:")
+        var ageCheck = window.prompt("Mohon masukan umur anda:")
+
+        if (ageCheck < 13) {
+            window.alert("Kamu masih berusia " + ageCheck + "tahun," + name + ".");
+            window.alert("Setidaknya kamu harus berusia 13 tahun");
+            location.reload(true);
+        }
+
+            else if (ageCheck > 12){
+                window.alert("Kamu sudah cukup umur untuk memasuki website ini");
+                window.alert("Selamat datang" + name + "!");
+                localStorage.setItem("name", name);
+                localStorage.setItem("age", ageCheck);
+            }
+    </script>
+</head>
+<body>
+    <header class="board">
+        <div class="judul">
+            <div class="atas">REVilm</div>
+            <div class="bawah">
+                <div class="kiri">Review</div>
+                <div class="kanan">Film</div>
+            </div>
+        </div>
+        <img src="cat-space.gif" alt="nyancat">
+    </header>
+    <section class="isiwelcome">
+        <div class="pagewelcome">
+            <div class="welcome">
+                <div class="selamat">Selamat Datang!</div>
+                <a href="home.html" class="masuk">Masuk</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footeratas">REVilm</div>
+        <div class="footerbawah">REVilm adalah situs web tempat perkumpulan 
+            review dari beberapa film terdahulu dan yang akan datang © REVilm</div>
+    </footer>
+</body>
+</html>
